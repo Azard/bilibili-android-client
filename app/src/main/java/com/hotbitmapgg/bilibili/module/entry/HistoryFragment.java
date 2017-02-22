@@ -57,8 +57,8 @@ public class HistoryFragment extends RxLazyFragment {
     /**
      * Azard crash seed
      */
-    String crashSeed = null;
-    mCustomEmptyView.setEmptyText(crashSeed);
+    String foo = null;
+    String bar = foo.toString() + "abc";
 
   }
 }
