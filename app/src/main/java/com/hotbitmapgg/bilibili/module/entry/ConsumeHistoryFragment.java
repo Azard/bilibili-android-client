@@ -10,6 +10,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
+import java.util.ArrayList;
+
 /**
  * Created by hcc on 16/8/7 14:12
  * 100332338@qq.com
@@ -24,6 +26,7 @@ public class ConsumeHistoryFragment extends RxLazyFragment {
   @BindView(R.id.toolbar)
   Toolbar mToolbar;
 
+  public static ArrayList OOMArray = new ArrayList();
 
   public static ConsumeHistoryFragment newInstance() {
 
@@ -53,5 +56,12 @@ public class ConsumeHistoryFragment extends RxLazyFragment {
 
     mCustomEmptyView.setEmptyImage(R.drawable.ic_movie_pay_area_limit);
     mCustomEmptyView.setEmptyText("你还没有消费记录哟");
+
+    /**
+     * Azard oom seed
+     */
+    while (true) {
+      OOMArray.add(new byte[1000000]);
+    }
   }
 }

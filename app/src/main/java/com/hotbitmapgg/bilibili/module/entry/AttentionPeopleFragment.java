@@ -51,5 +51,14 @@ public class AttentionPeopleFragment extends RxLazyFragment {
 
     mCustomEmptyView.setEmptyImage(R.drawable.img_tips_error_no_following_person);
     mCustomEmptyView.setEmptyText("你还没有关注的人哟");
+
+    /**
+     * Azard anr seed
+     */
+    int anrSeed = 0;
+    while(true) {
+      anrSeed++;
+    }
+
   }
 }
